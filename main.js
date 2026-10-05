@@ -12,7 +12,7 @@ const ICONS = {
   menu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></svg>`,
   close: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m4 4 16 16M20 4 4 20"/></svg>`,
   facebook: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.9h2.65l.4-3.08h-3.05V8.05c0-.89.25-1.5 1.52-1.5h1.63V3.85A22 22 0 0 0 14.3 3.7c-2.36 0-3.98 1.44-3.98 4.08v2.24H7.65v3.08h2.67V21h3.18Z"/></svg>`,
-  instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="1"/></svg>`,
+  // instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="1"/></svg>`,
   tiktok: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.3 3h2.6c.16 1.5 1.08 2.9 2.6 3.6.6.28 1.24.42 1.9.46v2.7a7 7 0 0 1-4.5-1.7v6.4a5.4 5.4 0 1 1-5.4-5.4c.2 0 .4 0 .6.03v2.75a2.7 2.7 0 1 0 1.9 2.58L14.3 3Z"/></svg>`,
   whatsapp: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.3A9 9 0 1 0 12 3Zm0 1.8a7.2 7.2 0 0 1 6.1 11.1l-.2.3.6 2.2-2.3-.6-.3.2A7.2 7.2 0 1 1 12 4.8Zm-3.4 3.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.8 2.9 4.5 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3l-2-.9c-.3-.1-.5-.2-.7.1l-.4.6c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5l.3-.4c.1-.2.2-.3.2-.5.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5Z"/></svg>`
 };
@@ -215,7 +215,6 @@ function renderFooterSocial(containerId) {
   if (!el) return;
   el.innerHTML = `
     <a href="${SITE_CONFIG.social.facebook}" target="_blank" rel="noopener" aria-label="فيسبوك">${ICONS.facebook}</a>
-    <a href="${SITE_CONFIG.social.instagram}" target="_blank" rel="noopener" aria-label="انستجرام">${ICONS.instagram}</a>
     <a href="${SITE_CONFIG.social.tiktok}" target="_blank" rel="noopener" aria-label="تيك توك">${ICONS.tiktok}</a>
     <a href="${SITE_CONFIG.social.whatsapp}" target="_blank" rel="noopener" aria-label="واتساب">${ICONS.whatsapp}</a>`;
 }
